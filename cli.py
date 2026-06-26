@@ -23,7 +23,7 @@ def get_inputs():
     )
     ventilation_coefficient = 0.6
     sec_to_hours = 3600
-    airflow = window_height*window_height*ventilation_coefficient*wind_speed*sec_to_hours
+    airflow = window_height*window_width*ventilation_coefficient*wind_speed*sec_to_hours
 
     duration = int(
         input("Ventilation time (minutes): ")
