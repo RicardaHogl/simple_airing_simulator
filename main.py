@@ -12,9 +12,12 @@ def print_state(title, state):
     print(f"\n{title}")
 
     for k, v in state.summary().items():
-
+        if k=="Humidity Ratio":
+            format = f"{v:.5f}"
+        else:
+            format = f"{v:.2f}"
         if isinstance(v, float):
-            print(f"{k:20}: {v:.2f}")
+            print(f"{k:20}: ",format)
         else:
             print(f"{k:20}: {v}")
 

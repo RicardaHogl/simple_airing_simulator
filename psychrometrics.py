@@ -62,6 +62,6 @@ class AirState:
             "RH": self.relative_humidity,
             "Wet Bulb": self.wet_bulb,
             # "Dew Point": self.dew_point,
-            # "Humidity Ratio": self.humidity_ratio,
+            "Humidity Ratio": self.humidity_ratio,
             # "Enthalpy": self.enthalpy,
         }
